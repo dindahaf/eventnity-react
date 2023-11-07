@@ -3,6 +3,10 @@ import Header from "../components/layout/header";
 import { Hero } from "../components/home/hero";
 import { About } from "../components/home/about"
 import { Venue } from "../components/home/venue"
+import { Event } from "../components/home/event";
+import { Schedule } from "../components/home/schedule";
+import { Partner } from "../components/home/partner"
+import Footer from "../components/layout/footer";
 
 function Home() {
   return (
@@ -15,6 +19,12 @@ function Home() {
             <Hero />
             <About />
             <Venue />
+            <Event />
+            <Schedule />
+            <Partner />
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     </>
