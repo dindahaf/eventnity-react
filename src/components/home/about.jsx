@@ -1,7 +1,7 @@
 import { Button } from "../common/button";
-import About1 from "../../assets/images/about-1.png"
-import About2 from "../../assets/images/about-2.png"
-import { Square } from "../../components/common/button"
+import About1 from "../../assets/images/about-1.png";
+import About2 from "../../assets/images/about-2.png";
+import { Square } from "../../components/common/square";
 
 export function About() {
   return (
@@ -22,13 +22,24 @@ export function About() {
         </div>
       </div>
       <div className="wow animate__animated animate__slideInRight relative col-span-4 h-[470px] md:col-span-8 md:mt-36 lg:col-span-6 lg:mt-0">
-      <img
-              src={About1}
-              alt={About1}
-              className="absolute h-auto w-[170px] md:h-[421px] md:w-[319px] lg:h-[421px] lg:w-[319px] lg:left-[42px] lg:top-[225px]"
-            />
-            <div
-              className="wow animate__animated animate__slideInDown absolute right-0 top-[100px] md:top-[240px] z-10 rounded-2xl bg-white px-4 py-4 shadow-[0px_4px_40px_0px_rgba(91,33,182,0.19)] md:right-[258px] md:rounded-[30px] md:px-[30px] md:py-[20px] lg:left-[99px] lg:top-[622px]"
+        <img
+          src={About1}
+          alt={About1}
+          className="absolute h-auto w-[170px] md:h-[421px] md:w-[319px] lg:h-[421px] lg:w-[319px] lg:left-[42px] lg:top-[225px]"
+        />
+        <div>
+          <Square className="wow animate__animated animate__slideInDown absolute right-0 top-[100px] md:top-[240px] z-10 px-4 py-4  md:right-[258px] md:px-[30px] md:py-[20px] lg:left-[99px] lg:top-[622px]">
+            <h1 className="text-center font-rubik text-4xl font-medium md:text-[64px] md:leading-[94px]">
+              46+
+            </h1>
+            <h2 className="text-center font-rubik text-[10px] font-medium leading-6 md:text-base">
+            Events In The Last Year
+            </h2>
+          </Square>
+        </div>
+
+        {/* <div
+              className="wow animate__animated animate__slideInDown absolute right-0 top-[100px] md:top-[240px] z-10 px-4 py-4  md:right-[258px] md:px-[30px] md:py-[20px] lg:left-[99px] lg:top-[622px]"
             >
               <h1
                 className="text-center font-rubik text-4xl font-medium md:text-[64px] md:leading-[94px]"
@@ -40,15 +51,13 @@ export function About() {
               >
                 Events In The Last Year
               </h2>
-              {/* <Square locationClassName="text-center font-rubik text-4xl font-medium md:text-[64px] md:leading-[94px]" locationName="46+" /> */}
-            </div>
-            <img
-              src={About2}
-              alt={About2}
-              className="absolute bottom-0 md:top-0 right-0 h-auto w-[170px] md:h-[421px] md:w-[319px] lg:right-0 lg:top-[435px]"
-            />
+            </div> */}
+        <img
+          src={About2}
+          alt={About2}
+          className="absolute bottom-0 md:top-0 right-0 h-auto w-[170px] md:h-[421px] md:w-[319px] lg:right-0 lg:top-[435px]"
+        />
       </div>
     </div>
   );
 }
-
