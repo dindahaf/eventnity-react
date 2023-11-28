@@ -1,7 +1,7 @@
 import { Button } from "../common/button";
 import About1 from "../../assets/images/about-1.png";
 import About2 from "../../assets/images/about-2.png";
-import { Square } from "../../components/common/square";
+import { Square } from "../common/square";
 
 export function About() {
   return (
@@ -15,10 +15,13 @@ export function About() {
           Planners in achieving the goal of carrying out an event.
         </p>
         <div className="flex items-center justify-center lg:block">
-          <Button
+          <Button className={"mt-4 lg:mt-[97px]"} variant={"secondary"}>
+          More About Us
+          </Button>
+          {/* <Button
             name="More About Us"
             className="mt-4 rounded-[10px] bg-[#070148] px-4 py-2 font-rubik text-xs font-medium text-[#FFF] md:px-[60px] md:py-[30px] md:text-2xl lg:mt-[97px]"
-          />
+          /> */}
         </div>
       </div>
       <div className="wow animate__animated animate__slideInRight relative col-span-4 h-[470px] md:col-span-8 md:mt-36 lg:col-span-6 lg:mt-0">

@@ -1,6 +1,6 @@
 import { Button } from "../common/button";
-import { MENUS } from "../../data/data"
-
+import { MENUS } from "../../data/data";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const listItems = MENUS.map((menu) => (
@@ -31,13 +31,26 @@ function Header() {
       <div className="col-span-1 flex flex-col items-end md:col-span-6 md:flex md:flex-row md:items-center md:justify-between lg:col-span-9">
         <NavBar />
         <div className="flex content-between items-center">
-          <Button name="Login" className="pr-2 font-fredoka text-xs font-medium md:text-[18px] lg:pr-[41px]"/>
-          <Button name="Register" className="rounded-lg bg-[#070148] px-4 py-1 font-rubik text-xs text-white md:text-[18px] lg:rounded-[14px] lg:px-[40px] lg:py-[15px]"/>
+          <Link
+            to="/login"
+            className="pr-2 font-fredoka text-xs font-medium md:text-[18px] lg:pr-[41px] hover:bg-sky-700"
+          >
+            {" "}
+            Login
+          </Link>
+          <Link
+            to="/register"
+            className="rounded-lg bg-[#070148] px-4 py-1 font-rubik text-xs text-white md:text-[18px] lg:rounded-[14px] lg:px-[40px] lg:py-[15px] hover:bg-[#0b026f] focus:ring-4 focus:outline-none focus:ring-[#93c5fd]"
+          >
+            Register
+          </Link>
+
+          {/* <Button name="Login" className="pr-2 font-fredoka text-xs font-medium md:text-[18px] lg:pr-[41px]"/>
+          <Button name="Register" className="rounded-lg bg-[#070148] px-4 py-1 font-rubik text-xs text-white md:text-[18px] lg:rounded-[14px] lg:px-[40px] lg:py-[15px]"/> */}
         </div>
       </div>
     </div>
   );
 }
-
 
 export default Header;

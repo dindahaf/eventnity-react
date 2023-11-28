@@ -1,5 +1,7 @@
 import EventImg from "../../assets/images/event.png";
 import { Square } from "../common/square";
+import { Time } from "../common/time";
+import { TIMES } from "../../data/data";
 
 export function Event() {
   return (
@@ -59,38 +61,16 @@ export function Event() {
         </div>
       </div>
       <div className="wow animate__animated animate__slideInUp col-span-4 grid grid-cols-1 lg:gap-x-[102px] md:col-span-8 md:mt-6 lg:mt-[121px] md:grid-cols-4 lg:col-span-12">
-        <Square className="m-auto px-9 py-5 lg:px-[70px] lg:py-[36px]">
-          <h1 className="text-center font-inter text-4xl font-extrabold md:text-7xl">
-            23
-          </h1>
-          <h2 className="text-center font-inter text-xs font-extrabold leading-8 text-[#6B7280] md:text-xl lg:text-2xl">
-            DAYS
-          </h2>
-        </Square>
-        <Square className="m-auto px-9 py-5 lg:px-[70px] lg:py-[36px]">
-        <h1 className="text-center font-inter text-4xl font-extrabold md:text-7xl">
-            09
-          </h1>
-          <h2 className="text-center font-inter text-xs font-extrabold leading-8 text-[#6B7280] md:text-xl lg:text-2xl">
-            HOURS
-          </h2>
-        </Square>
-        <Square className="m-auto px-9 py-5 lg:px-[70px] lg:py-[36px]">
-        <h1 className="text-center font-inter text-4xl font-extrabold md:text-7xl">
-            17
-          </h1>
-          <h2 className="text-center font-inter text-xs font-extrabold leading-8 text-[#6B7280] md:text-xl lg:text-2xl">
-            MINUTES
-          </h2>
-        </Square>
-       <Square className="m-auto px-9 py-5 lg:px-[70px] lg:py-[36px]">
-       <h1 className="text-center font-inter text-4xl font-extrabold md:text-7xl">
-            03
-          </h1>
-          <h2 className="text-center font-inter text-xs font-extrabold leading-8 text-[#6B7280] md:text-xl lg:text-2xl">
-            SECONDS
-          </h2>
-       </Square>
+        {TIMES.map((item) => {
+          return (
+            <Square
+              className="m-auto px-9 py-5 lg:px-[70px] lg:py-[36px]"
+              key={item.id}
+            >
+              <Time value={item.value} unit={item.unit}></Time>
+            </Square>
+          );
+        })}
       </div>
     </div>
   );

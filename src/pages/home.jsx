@@ -1,11 +1,11 @@
 import "../style/index.css";
 import Header from "../components/layout/header";
-import { Hero } from "../components/home/hero";
-import { About } from "../components/home/about"
-import { Venue } from "../components/home/venue"
-import { Event } from "../components/home/event";
+import { Hero } from "../components/home/hero-section";
+import { About } from "../components/home/about-section"
+import { Venue } from "../components/home/venue-section"
+import { Event } from "../components/home/event-section";
 import { Schedule } from "../components/home/schedule";
-import { Partner } from "../components/home/partner"
+import { PartnerSection } from "../components/home/partner-section"
 import Footer from "../components/layout/footer";
 
 function Home() {
@@ -21,7 +21,7 @@ function Home() {
             <Venue />
             <Event />
             <Schedule />
-            <Partner />
+            <PartnerSection />
         </div>
         <div>
           <Footer />

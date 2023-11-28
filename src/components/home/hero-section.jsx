@@ -33,7 +33,11 @@ export function Hero() {
             </p>
           </div>
           <div className="col-span-4 flex items-center justify-center md:col-span-8 lg:col-span-12">
-            <Button name="Explore Event" className="rounded-lg bg-[#070148] px-4 py-2 font-rubik text-xs font-medium text-[#FFF] md:absolute md:bottom-[-35px] md:rounded-[14px] md:px-[60px] md:py-[30px] md:text-2xl lg:bottom-[-44px]"/>
+            <Button className={"md:absolute md:bottom-[-35px] lg:bottom-[-44px]"} variant={"secondary"}>
+            Explore Event
+            </Button>
+
+            {/* <Button name="Explore Event" className="rounded-lg bg-[#070148] px-4 py-2 font-rubik text-xs font-medium text-[#FFF] md:absolute md:bottom-[-35px] md:rounded-[14px] md:px-[60px] md:py-[30px] md:text-2xl lg:bottom-[-44px]"/> */}
           </div>
     </div>
   );

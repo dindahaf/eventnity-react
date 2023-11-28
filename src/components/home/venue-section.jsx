@@ -1,6 +1,6 @@
 import Venue1 from "../../assets/images/venue-1.png";
 import Venue2 from "../../assets/images/venue-2.png";
-import { Square } from "../../components/common/square";
+import { Square } from "../common/square";
 
 export function Venue() {
   return (
