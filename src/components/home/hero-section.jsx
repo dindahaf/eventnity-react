@@ -12,10 +12,11 @@ export function Hero() {
           Welcome to our ticketing website!
         </h4>
         <h1 className="mt-2 font-inter text-3xl font-black leading-none text-white md:mt-[34px] md:text-6xl lg:text-7xl">
-          Where Your 
+          Where Your
+          {' '}
           <span className="bg-gradient-to-tr from-[#6D28D9] from-0% via-[#E127FF] via-90% to-[#FF2976] to-100% bg-clip-text text-transparent">
           Event
-          </span>
+          </span>{' '}
           Dreams Come to Life!
         </h1>
       </div>

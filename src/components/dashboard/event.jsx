@@ -1,7 +1,6 @@
-export function Product() {
+export function Event() {
   return (
-    <div className="relative border-t">
-      <div className="w-[83%] absolute right-0">
+      <div className="flex-1">
         <div class="p-4 bg-white block sm:flex items-center justify-between border-b border-gray-200 lg:mt-0.5 ">
           <div class="w-full mb-1">
             <div class="mb-4">
@@ -779,6 +778,5 @@ export function Product() {
           </form>
         </div>
       </div>
-    </div>
   );
 }
