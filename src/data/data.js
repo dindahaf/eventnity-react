@@ -13,12 +13,11 @@ import PartnerHulu from "../assets/images/partner-hulu.png";
 import PartnerSpotify from "../assets/images/partner-spotify.png";
 import PartnerTiktok from "../assets/images/partner-tiktok.png";
 import PartnerUniversal from "../assets/images/partner-universal.png";
-import MediaFacebook from "../assets/images/facebook.svg?react"
-import MediaInstagram from "../assets/images/instagram.svg?react"
-import MediaTwitter from "../assets/images/twitter.svg?react"
-import MediaLinkedIn from "../assets/images/linkedin.svg?react"
-import MediaYoutube from "../assets/images/youtube.svg?react"
-
+import MediaFacebook from "../assets/images/facebook.svg?react";
+import MediaInstagram from "../assets/images/instagram.svg?react";
+import MediaTwitter from "../assets/images/twitter.svg?react";
+import MediaLinkedIn from "../assets/images/linkedin.svg?react";
+import MediaYoutube from "../assets/images/youtube.svg?react";
 
 export const MENUS = [
   { title: "Home", id: 1 },
@@ -32,8 +31,8 @@ export const TIMES = [
   { id: 1, value: "23", unit: "DAYS" },
   { id: 2, value: "09", unit: "HOURS" },
   { id: 3, value: "17", unit: "MINUTES" },
-  { id: 4, value: "03", unit: "SECONDS" }
-]
+  { id: 4, value: "03", unit: "SECONDS" },
+];
 
 export const SCHEDULES = [
   {
@@ -103,7 +102,6 @@ export const EVENTNITY_LIST = [
   { id: 3, title: "Pricing" },
 ];
 
-
 export const FEATURE_LIST = [
   { id: 1, title: "Payment Integration" },
   { id: 2, title: "Newstlatter" },
@@ -122,12 +120,10 @@ export const COMPANY_LIST = [
   { id: 5, title: "Event" },
 ];
 
-
-export const MEDIA_LIST =[
+export const MEDIA_LIST = [
   { id: 1, svg: MediaFacebook },
   { id: 2, svg: MediaInstagram },
   { id: 3, svg: MediaTwitter },
   { id: 4, svg: MediaLinkedIn },
-  { id: 5, svg: MediaYoutube},
-]
-
+  { id: 5, svg: MediaYoutube },
+];

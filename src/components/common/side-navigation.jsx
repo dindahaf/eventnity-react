@@ -1,3 +1,6 @@
+import { NavLink } from "react-router-dom"
+import { cn } from "../../utils/shadecn"
+
 export function SideNavigation() {
   return (
     <>
@@ -50,9 +53,9 @@ export function SideNavigation() {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span className="flex-1 ml-3 text-left whitespace-nowrap">
+                <NavLink to="/dashboard/event" className={({isActive}) => cn("flex-1 ml-3 text-left whitespace-nowrap", isActive ? "bg-gray-100" : undefined)}>
                   Event
-                </span>
+                </NavLink>
               </button>
             </li>
             <li>
@@ -75,9 +78,11 @@ export function SideNavigation() {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span className="flex-1 ml-3 text-left whitespace-nowrap">
+                <NavLink to="/dashboard/partner" className={({isActive}) =>
+                    cn("flex-1 ml-3 text-left whitespace-nowrap", isActive ? "bg-gray-100" : undefined)
+                }>
                   Partner
-                </span>
+                </NavLink>
               </button>
             </li>
           </ul>
