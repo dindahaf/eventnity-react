@@ -31,7 +31,7 @@ export function SideNavigation() {
         className="w-60 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidenav"
       >
-        <div className="overflow-y-auto py-5 px-3 h-full  bg-white border-r border-gray-200">
+        <div className="overflow-y-auto py-5 px-3 h-full w-[200px] bg-white border-r border-gray-200">
           <ul className="space-y-2">
             <li>
               <button
