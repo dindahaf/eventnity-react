@@ -1,10 +1,26 @@
 import { BasicTable } from "../common/basic-table";
 import { SCHEDULES } from "../../data/data";
 import { useMemo } from "react";
+import SteinStore from "stein-js-client";
+import { useEffect, useState } from "react";
+import { format, parse } from "date-fns";
+
+const store = new SteinStore(
+  "https://api.steinhq.com/v1/storages/655b1db5c5ad5604ce2c64e6"
+)
+
+store.read("event").then( data => {
+  console.log(data)
+})
 
 
 export function Event() {
-  const data = useMemo(() => SCHEDULES, []);
+  const [schedules, setSchedules] = useState([])
+  useEffect( () => {
+    store.read("event").then(data => {
+      setSchedules(data)
+    })
+  } ,[] )
   
   /** @type import('@tanstack/react-table').ColumnDef<any> */
   const eventColumns = [
@@ -24,11 +40,29 @@ export function Event() {
     {
       header: "Date",
       accessorKey: "date",
+      cell: (info) => {
+        const parsedDate = parse(info.row.original.date, "dd/MM/yyyy HH:mm:ss", new Date())
+        return (
+          <div>
+            {format(parsedDate, "PPP")}
+          </div>
+        )
+      } ,
       footer: "Date",
     },
     {
       header: "Time",
-      accessorKey: "time",
+      accessorKey: "start_time",
+      cell: (info) => {
+        console.log(info)
+        const parsedStartTime = parse(info.row.original.start_time, "dd/MM/yyyy HH:mm:ss", new Date())
+        const parsedEndTime = parse(info.row.original.end_time, "dd/MM/yyyy HH:mm:ss", new Date())
+        return (
+          <div>
+            {format(parsedStartTime, "p")} - {format(parsedEndTime, 'p')}
+          </div>
+        )
+      },
       footer: "Time",
     },
     {
@@ -101,6 +135,6 @@ export function Event() {
   ];
 
   return (
-    <BasicTable data={data} columns={eventColumns} newLink="/dashboard/event/new" />
+    <BasicTable data={schedules} columns={eventColumns} newLink="/dashboard/event/new" />
   )
 }
