@@ -4,6 +4,8 @@ import Login from "./pages/login"
 import Register from "./pages/register"
 import DashboardEvent from "./pages/dashboard-event"
 import DashboardPartner from "./pages/dashboard-partner";
+import DashboardEventNew from "./pages/dashboard-event-new";
+import DashboardPartnerNew from "./pages/dashboard-partner-new";
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import RootLayout from "./pages/root";
 
@@ -28,12 +30,22 @@ const router = createBrowserRouter([
     children: [
       {
         path: "event",
-        element: <DashboardEvent />
+        element: <DashboardEvent />,
+      
       },
       {
         path: "partner",
         element: <DashboardPartner />
+      },
+      {
+        path: "event/new",
+        element: <DashboardEventNew />
+      },
+      {
+        path: "partner/new",
+        element: <DashboardPartnerNew />
       }
+      
     ]
   }
 ]);
