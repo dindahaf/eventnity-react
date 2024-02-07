@@ -83,6 +83,64 @@ export const SCHEDULES = [
     title: "Concert Coldplay Band",
     description: "Become a potential and professional freelancer",
   },
+  {
+    id: 7,
+    image: Schedule6,
+    date: "Maret 17th 2023",
+    time: "8 PM to 12 PM",
+    title: "Concert Coldplay Band",
+    description: "Become a potential and professional freelancer",
+  },
+  {
+    id: 8,
+    image: Schedule6,
+    date: "Maret 17th 2023",
+    time: "8 PM to 12 PM",
+    title: "Concert Coldplay Band",
+    description: "Become a potential and professional freelancer",
+  },
+  {
+    id: 9,
+    image: Schedule6,
+    date: "Maret 17th 2023",
+    time: "8 PM to 12 PM",
+    title: "Concert Coldplay Band",
+    description: "Become a potential and professional freelancer",
+  },
+  {
+    id: 10,
+    image: Schedule6,
+    date: "Maret 17th 2023",
+    time: "8 PM to 12 PM",
+    title: "Concert Coldplay Band",
+    description: "Become a potential and professional freelancer",
+  },
+  {
+    id: 11,
+    image: Schedule6,
+    date: "Maret 17th 2023",
+    time: "8 PM to 12 PM",
+    title: "Concert Coldplay Band",
+    description: "Become a potential and professional freelancer",
+  },
+  {
+    id: 12,
+    image: Schedule6,
+    date: "Maret 17th 2023",
+    time: "8 PM to 12 PM",
+    title: "Concert Coldplay Band",
+    description: "Become a potential and professional freelancer",
+  },
+  {
+    id: 13,
+    image: Schedule6,
+    date: "Maret 17th 2023",
+    time: "8 PM to 12 PM",
+    title: "Concert Coldplay Band",
+    description: "Become a potential and professional freelancer",
+  },
+
+
 ];
 
 export const PARTNERS = [
