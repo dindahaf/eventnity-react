@@ -1,9 +1,10 @@
 import { ScheduleItem } from "../common/schedule-item";
 import { SCHEDULES } from "../../data/data";
 import { Button } from "../common/button";
-
 import SteinStore from "stein-js-client";
 import { useEffect, useState } from "react";
+
+
 const store = new SteinStore(
   "https://api.steinhq.com/v1/storages/655b1db5c5ad5604ce2c64e6"
 );

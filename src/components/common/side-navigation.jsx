@@ -1,7 +1,10 @@
+import { NavLink } from "react-router-dom"
+import { cn } from "../../utils/shadecn"
+
 export function SideNavigation() {
   return (
     <>
-      <button
+      {/* <button
         data-drawer-target="default-sidebar"
         data-drawer-toggle="default-sidebar"
         aria-controls="default-sidebar"
@@ -22,13 +25,13 @@ export function SideNavigation() {
             d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
           ></path>
         </svg>
-      </button>
+      </button> */}
       <aside
         id="default-sidebar"
-        className="fixed top-[70px] md:top-[54px] left-0 z-40 w-60 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        className="w-60 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidenav"
       >
-        <div className="overflow-y-auto py-5 px-3 h-full  bg-white border-r border-gray-200">
+        <div className="overflow-y-auto py-5 px-3 h-full w-[200px] bg-white border-r border-gray-200">
           <ul className="space-y-2">
             <li>
               <button
@@ -50,9 +53,9 @@ export function SideNavigation() {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span className="flex-1 ml-3 text-left whitespace-nowrap">
+                <NavLink to="/dashboard/event" className={({isActive}) => cn("flex-1 ml-3 text-left whitespace-nowrap", isActive ? "bg-gray-100" : undefined)}>
                   Event
-                </span>
+                </NavLink>
               </button>
             </li>
             <li>
@@ -75,9 +78,11 @@ export function SideNavigation() {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span className="flex-1 ml-3 text-left whitespace-nowrap">
+                <NavLink to="/dashboard/partner" className={({isActive}) =>
+                    cn("flex-1 ml-3 text-left whitespace-nowrap", isActive ? "bg-gray-100" : undefined)
+                }>
                   Partner
-                </span>
+                </NavLink>
               </button>
             </li>
           </ul>

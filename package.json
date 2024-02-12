@@ -10,13 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-table": "^8.10.7",
     "animate.css": "^4.1.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "date-fns": "^3.1.0",
+    "flowbite-datepicker": "^1.2.6",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
+    "react-datepicker": "^5.1.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.1",
     "react-router-dom": "^6.18.0",
     "sort-by": "^1.2.0",
     "stein-js-client": "^0.0.2",
@@ -24,6 +29,7 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "@hookform/devtools": "^4.3.1",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",

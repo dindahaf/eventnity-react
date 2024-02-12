@@ -4,7 +4,7 @@ import { Hero } from "../components/home/hero-section";
 import { About } from "../components/home/about-section"
 import { Venue } from "../components/home/venue-section"
 import { Event } from "../components/home/event-section";
-import { Schedule } from "../components/home/schedule";
+import { Schedule } from "../components/home/schedule-section";
 import { PartnerSection } from "../components/home/partner-section"
 import Footer from "../components/layout/footer";
 
